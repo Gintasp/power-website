@@ -102,7 +102,6 @@ p {
 
 .about .flex {
   justify-content: center;
-  flex-wrap: wrap;
   width: 100%; }
 .about .left {
   max-width: 500px; }
@@ -120,7 +119,7 @@ p {
   background-image: url(../images/large/workers.png);
   margin: auto;
   height: 425px;
-  width: 450px;
+  width: 40vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -258,8 +257,7 @@ button {
   width: 100%; }
 
 .slider-container {
-  justify-content: center;
-  margin-bottom: 80px; }
+  justify-content: center; }
 
 .testimonial-box {
   width: 80%;
@@ -276,7 +274,7 @@ button {
 
 .text {
   color: #51514f;
-  min-width: 400px; }
+  max-width: 400px; }
   .text p {
     margin: 0 20px 35px 0; }
   .text h5 {
@@ -309,13 +307,14 @@ button {
   flex-direction: column;
   width: 230px;
   margin: 0 10px 25px 10px;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   height: 405px;
   overflow-x: hidden; }
   .card:hover .media-container {
     right: 0; }
+  .card > div:first-of-type {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
 
 .caption {
   background: #e8bb22;
@@ -378,8 +377,8 @@ button {
   justify-content: center; }
 
 .blog-item {
-  width: 430px;
-  min-width: 300px;
+  max-width: 430px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin: 0 15px 25px 15px;
@@ -460,7 +459,12 @@ textarea {
   color: white;
   margin: 15px 0 0 0;
   -webkit-appearance: none;
-  border-radius: none; }
+  border-radius: none;
+  transition: all 0.3s; }
+  input:focus,
+  textarea:focus {
+    border: 2px solid #e8bb22;
+    border-radius: 15px; }
 
 input {
   padding: 15px;
@@ -499,9 +503,26 @@ footer {
     flex-wrap: wrap; }
 
   .text {
-    margin-top: 15px; } }
+    margin-top: 15px; }
+
+  .back,
+  .forward {
+    padding: 185px 22px; }
+
+  .photo {
+    height: 200px;
+    width: 200px; }
+
+  .about .flex {
+    flex-wrap: wrap; }
+
+  .workers,
+  .right {
+    width: 100%; } }
 @media only screen and (max-width: 768px) {
-  .flex .menu {
+  .flex .menu,
+  .back,
+  .forward {
     display: none; }
 
   .flex ul:last-of-type {

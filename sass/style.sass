@@ -117,7 +117,6 @@ p
     
     .flex 
         justify-content: center
-        flex-wrap: wrap
         width: 100%
 
     .left
@@ -139,7 +138,7 @@ p
     background-image: url(../images/large/workers.png)
     margin: auto
     height: 425px
-    width: 450px
+    width: 40vw
     background-size: cover
     background-repeat: no-repeat
     background-position: center
@@ -292,7 +291,6 @@ button
 
 .slider-container 
     justify-content: center
-    margin-bottom: 80px
 
 .testimonial-box 
     width: 80%
@@ -309,7 +307,7 @@ button
 
 .text 
     color: $grey
-    min-width: 400px
+    max-width: 400px
 
     p 
         margin: 0 20px 35px 0
@@ -346,15 +344,17 @@ button
     flex-direction: column
     width: 230px
     margin: 0 10px 25px 10px
-    background-size: cover
-    background-position: center center
-    background-repeat: no-repeat
     height: 405px
     overflow-x: hidden
 
     &:hover 
         .media-container 
             right: 0
+
+    >div:first-of-type 
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
             
         
 
@@ -423,8 +423,8 @@ button
     justify-content: center
 
 .blog-item 
-    width: 430px
-    min-width: 300px
+    max-width: 430px
+    width: 100%
     display: flex
     flex-direction: column
     margin: 0 15px 25px 15px
@@ -510,6 +510,11 @@ textarea
     margin: 15px 0 0 0
     -webkit-appearance: none
     border-radius: none
+    transition: all .3s
+
+    &:focus 
+        border: 2px solid $yellow
+        border-radius: 15px
 
 input 
     padding: 15px
@@ -542,6 +547,7 @@ footer
     span 
         color: $yellow
 
+
 // MEDIA QUERIES========================================================
 
 @media only screen and (max-width: 1000px) 
@@ -553,9 +559,27 @@ footer
 
     .text 
         margin-top: 15px
+    
+    .back,
+    .forward 
+        padding: 185px 22px
+
+    .photo 
+        height: 200px 
+        width: 200px
+
+    .about .flex 
+        flex-wrap: wrap
+
+    .workers,
+    .right
+        width: 100%
+
 
 @media only screen and (max-width: 768px) 
-    .flex .menu 
+    .flex .menu,
+    .back,
+    .forward
         display: none
 
     .flex ul:last-of-type
@@ -569,4 +593,5 @@ footer
     form input,
     form textarea
         width: 85vw
+
     
