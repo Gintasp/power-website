@@ -39,7 +39,7 @@ header
         display: flex
 
 .slider 
-    height: 100vh
+    min-height: 100vh
     background: url('../images/large/slide1.png')
     background-size: cover
     background-position: center 
@@ -50,6 +50,7 @@ header
         margin: auto
         justify-content: space-between
         transition: width .3s
+        z-index: 1
 
     >.flex 
         background: white
@@ -570,10 +571,20 @@ footer
     border: 1px solid black
     padding: 10px 15px
     font-size: 2.2em
+    max-height: 60px
     color: $yellow
     cursor: pointer
     display: none
     margin: 10px
+
+.menu-small 
+    display: none
+    width: 50vw
+    background: white
+    margin-left: auto
+
+    li 
+        padding: 10px 0 10px 20px
 
 // MEDIA QUERIES========================================================
 
@@ -604,7 +615,6 @@ footer
 
 
 @media only screen and (max-width: 768px) 
-    .flex .menu,
     .back,
     .forward
         display: none
@@ -648,6 +658,10 @@ footer
     .burger 
         display: block
 
+    .menu-small,
+    .spacer 
+        display: block
+
 @media only screen and (max-width: 600px)
     .service,
     .testimonial,
@@ -673,6 +687,9 @@ footer
         width: 100%
         left: 0
     
-
+@media only screen and (max-width: 320px) and (max-height: 568px)//special query for iphone 5/SE
+    .hero-heading
+        position: relative
+        left: 0
 
     
