@@ -22,14 +22,14 @@ header {
     width: 80vw;
     justify-content: space-between;
     margin: auto; }
+  header .flex-right li {
+    margin: 0 5px; }
 
 .flex {
   display: flex; }
   .flex ul {
     list-style-type: none;
     display: flex; }
-    .flex ul li {
-      margin: 4px 6px; }
 
 .slider {
   height: 100vh;
@@ -43,8 +43,10 @@ header {
     justify-content: space-between;
     transition: width 0.3s; }
   .slider > .flex {
-    padding: 10px;
     background: white; }
+
+.logo {
+  margin: 10px 0; }
 
 .flex-left {
   flex-wrap: wrap; }
@@ -58,7 +60,7 @@ header {
   height: 100%;
   text-transform: uppercase;
   font-weight: 500;
-  padding-top: 20px;
+  padding: 30px 10px;
   cursor: pointer;
   text-align: center;
   font-size: 1em; }
@@ -518,7 +520,9 @@ footer {
   padding: 10px 15px;
   font-size: 2.2em;
   color: #e8bb22;
-  cursor: pointer; }
+  cursor: pointer;
+  display: none;
+  margin: 10px; }
 
 @media only screen and (max-width: 1000px) {
   .slider .flex {
@@ -583,7 +587,10 @@ footer {
   .item5,
   .item6 {
     height: 200px;
-    margin: 5px 0 0 0; } }
+    margin: 5px 0 0 0; }
+
+  .burger {
+    display: block; } }
 @media only screen and (max-width: 600px) {
   .service,
   .testimonial,
