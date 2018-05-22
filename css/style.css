@@ -67,7 +67,6 @@ header {
 
 .hero-heading {
   text-transform: uppercase;
-  font-size: 1.8em;
   width: 80vw;
   padding: 15px 20px;
   color: white;
@@ -79,7 +78,7 @@ header {
   .hero-heading h2 {
     border-left: 9px solid #e8bb22;
     padding-left: 4px;
-    font-size: 3vw; }
+    font-size: 2em; }
 
 h1 {
   text-align: center;
@@ -255,6 +254,21 @@ button {
 .item5 {
   height: 48%;
   width: 100%; }
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6 {
+  cursor: pointer; }
+  .item1:hover,
+  .item2:hover,
+  .item3:hover,
+  .item4:hover,
+  .item5:hover,
+  .item6:hover {
+    opacity: 0.8; }
 
 .slider-container {
   justify-content: center; }
@@ -461,10 +475,12 @@ textarea {
   -webkit-appearance: none;
   border-radius: none;
   transition: all 0.3s; }
-  input:focus,
-  textarea:focus {
-    border: 2px solid #e8bb22;
-    border-radius: 15px; }
+
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus {
+  border: 2px solid #e8bb22;
+  border-radius: 15px; }
 
 input {
   padding: 15px;
@@ -476,6 +492,8 @@ input[type="submit"] {
   width: 150px;
   font-weight: 500;
   cursor: pointer; }
+  input[type="submit"]:hover {
+    transform: scale(1.1); }
 
 textarea {
   font-family: Roboto;
@@ -486,7 +504,7 @@ textarea {
 
 footer {
   background: black;
-  padding: 35px 0;
+  padding: 35px 20px;
   text-align: center;
   font-weight: 300;
   font-size: 0.9em; }
@@ -494,6 +512,13 @@ footer {
     color: white; }
   footer span {
     color: #e8bb22; }
+
+.burger {
+  border: 1px solid black;
+  padding: 10px 15px;
+  font-size: 2.2em;
+  color: #e8bb22;
+  cursor: pointer; }
 
 @media only screen and (max-width: 1000px) {
   .slider .flex {
@@ -559,5 +584,28 @@ footer {
   .item6 {
     height: 200px;
     margin: 5px 0 0 0; } }
+@media only screen and (max-width: 600px) {
+  .service,
+  .testimonial,
+  .team,
+  .blog,
+  .partnership,
+  .contact {
+    padding: 7vh 5vw; }
+
+  .about {
+    padding: 7vh 0; }
+    .about .left {
+      width: 90vw; }
+
+  .text p {
+    margin: 0; }
+
+  .side-borders {
+    font-size: 2em; }
+
+  .hero-heading {
+    width: 100%;
+    left: 0; } }
 
 /*# sourceMappingURL=style.css.map */

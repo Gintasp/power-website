@@ -79,7 +79,6 @@ header
 
 .hero-heading
     text-transform: uppercase
-    font-size: 1.8em
     width: 80vw
     padding: 15px 20px
     color: white
@@ -92,7 +91,7 @@ header
     h2 
         border-left: 9px solid $yellow
         padding-left: 4px
-        font-size: 3vw
+        font-size: 2em
 
 h1 
         text-align: center
@@ -288,6 +287,17 @@ button
 .item5 
     height: 48%
     width: 100%
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6 
+    cursor: pointer
+    
+    &:hover
+        opacity: .8
 
 .slider-container 
     justify-content: center
@@ -512,6 +522,9 @@ textarea
     border-radius: none
     transition: all .3s
 
+input[type='text'],
+input[type='email'],
+textarea 
     &:focus 
         border: 2px solid $yellow
         border-radius: 15px
@@ -527,6 +540,9 @@ input[type="submit"]
     font-weight: 500
     cursor: pointer
 
+    &:hover
+        transform: scale(1.1)
+
 textarea
     font-family: Roboto 
     color: white
@@ -536,7 +552,7 @@ textarea
 
 footer 
     background: black
-    padding: 35px 0
+    padding: 35px 20px
     text-align: center
     font-weight: 300
     font-size: .9em
@@ -547,6 +563,12 @@ footer
     span 
         color: $yellow
 
+.burger 
+    border: 1px solid black
+    padding: 10px 15px
+    font-size: 2.2em
+    color: $yellow
+    cursor: pointer
 
 // MEDIA QUERIES========================================================
 
@@ -617,6 +639,31 @@ footer
     .item6
         height: 200px
         margin: 5px 0 0 0
+
+@media only screen and (max-width: 600px)
+    .service,
+    .testimonial,
+    .team,
+    .blog,
+    .partnership,
+    .contact 
+        padding: 7vh 5vw
+
+    .about 
+        padding: 7vh 0
+
+        .left 
+            width: 90vw
+
+    .text p 
+        margin: 0
+
+    .side-borders 
+        font-size: 2em
+
+    .hero-heading 
+        width: 100%
+        left: 0
     
 
 
