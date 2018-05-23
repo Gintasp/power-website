@@ -14,10 +14,10 @@ function scroll(from, to){
 };
 
 //scroll to elements
-scroll('#about','.about');
-scroll('#services','.service');
-scroll('#projects','.projects');
-scroll('#testimonials','.testimonial');
-scroll('#team','.team');
-scroll('#blog','.blog');
-scroll('#contacts','.contact');
+scroll('#about, #about-small','.about');
+scroll('#services, #services-small','.service');
+scroll('#projects, #projects-small','.projects');
+scroll('#testimonials, #testimonials-small','.testimonial');
+scroll('#team, #team-small','.team');
+scroll('#blog, #blog-small','.blog');
+scroll('#contacts, #contact-small','.contact');
