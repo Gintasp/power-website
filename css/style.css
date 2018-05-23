@@ -540,6 +540,17 @@ footer {
     .menu-small li:hover {
       background: rgba(242, 242, 242, 0.5); }
 
+.up {
+  padding: 15px 20px;
+  border: 2px solid #e8bb22;
+  color: #e8bb22;
+  position: fixed;
+  background: none;
+  top: 85vh;
+  right: 3vw;
+  font-size: 1.2em;
+  display: none; }
+
 @media only screen and (max-width: 1000px) {
   .slider .flex {
     width: 100%; }
@@ -573,6 +584,9 @@ footer {
   .visible {
     display: block;
     left: 0; }
+
+  .visible-up {
+    display: block; }
 
   .flex-left {
     font-size: 14px;
