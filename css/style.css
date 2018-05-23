@@ -534,7 +534,10 @@ footer {
   background: white;
   margin-left: auto; }
   .menu-small li {
-    padding: 10px 0 10px 20px; }
+    padding: 10px 0 10px 20px;
+    cursor: pointer; }
+    .menu-small li:hover {
+      background: rgba(242, 242, 242, 0.5); }
 
 @media only screen and (max-width: 1000px) {
   .slider .flex {
