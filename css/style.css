@@ -482,8 +482,7 @@ textarea {
 input[type='text']:focus,
 input[type='email']:focus,
 textarea:focus {
-  border: 2px solid #e8bb22;
-  border-radius: 15px; }
+  border: 2px solid #e8bb22; }
 
 input {
   padding: 15px;
